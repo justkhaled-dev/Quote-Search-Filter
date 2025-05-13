@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Search Filter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link href="css/main.css" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>✨ Search Quotes</h1>
+      <input type="text" id="searchInput" placeholder="Type to filter quotes...">
+      <div id="error" class="error"></div>
+    </div>
+    <div class="content">
+      <div id="loading">
+        
+      </div>
+      <ul id="quoteList"></ul>
+    </div>
+  </div>
+
+  <div class="modal" id="quoteModal">
+    <div class="modal-content">
+      <button onclick="closeModal()">×</button>
+      <p id="modalQuoteText"></p>
+      <p id="modalQuoteAuthor" class="modal-author"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
